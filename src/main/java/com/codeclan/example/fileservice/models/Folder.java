@@ -25,6 +25,9 @@ public class Folder {
         this.person = person;
     }
 
+    public Folder() {
+    }
+
     public Long getId() {
         return id;
     }

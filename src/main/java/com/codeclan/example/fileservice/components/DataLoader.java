@@ -24,8 +24,16 @@ public class DataLoader implements ApplicationRunner {
         Person person1 = new Person("Tommy");
         personRepository.save(person1);
 
-        Folder folder1 = new Folder("Codeclan", person1);
+        Person person2 = new Person("Angie");
+        personRepository.save(person2);
+
+        Folder folder1 = new Folder("Codeclan1", person1);
         folderRepository.save(folder1);
 
+        Folder folder2 = new Folder("Codeclan2", person2);
+        folderRepository.save(folder2);
+
+        Folder folder3 = new Folder("Codeclan3", person2);
+        folderRepository.save(folder3);
     }
 }
