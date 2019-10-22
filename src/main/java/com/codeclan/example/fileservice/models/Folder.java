@@ -15,7 +15,7 @@ public class Folder {
     @Column(name = "name")
     private String name;
 
-//    @JsonIgnoreProperties("folders")
+    @JsonIgnoreProperties("folders")
     @ManyToOne
     @JoinColumn(name = "person_id", nullable = false)
     private Person person;
